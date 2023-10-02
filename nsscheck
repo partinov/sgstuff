@@ -1,0 +1,1 @@
+curl -X PUT https://$serverhostname/api-sgcp/v00/domain/1?_site_token=$token | python -m json.tool

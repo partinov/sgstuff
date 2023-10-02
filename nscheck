@@ -1,0 +1,1 @@
+curl --insecure -d '{"_meta":{"notification":{"type":"generic","success":{"intlKey":"translate.notification.internal-check-completed"},"error":{"intlKey":"translate.failed-to-complete-internal-check"}}},"id":1,"sync_sg_flags":1}' -X PUT $token

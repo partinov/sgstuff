@@ -1,0 +1,22 @@
+function token {
+read -r -p "Token: " key ;
+echo -e "$key" > key.txt
+}
+function site-tools-client () {
+domain="$2"
+key="$(cat key.txt)"
+server="$(curl -sX POST 'https://maco.siteground.com/site_manager/' --cookie "PHPSESSID=$(cat cookie.txt)" --data-raw "site_id=&account_id=&client_id=&domain=$domain&username=&date_created_from=&date_created_to=&server=" | grep -B3 "<td>Active</td>" | awk -F "<*td>\|</" '{print $2}' | head -n1)"
+username="$(curl -sX POST 'https://maco.siteground.com/site_manager/' --cookie "PHPSESSID=$(cat cookie.txt)" --data-raw "site_id=&account_id=&client_id=&domain=$domain&username=&date_created_from=&date_created_to=&server=" | grep -B3 "<td>Active</td>" | awk -F "<*td>\|</" '{print $2}' | head -n2 | tail -n1)"
+
+if [ "$1" = "-r" ]; then
+	curl -sX GET https://${server}/api-sgcp/v00/domain/1?_site_token=${key} | python -m json.tool	
+elif [ "$1" = "-s" ]; then
+	curl -s "https://${server}/api-sgcp/v00/ssh?_site_token=${key}"  --data-raw '{"comment":"sg","key_pub":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9Wmn0oSHLjEpGHFmqjir5BJForOvghFKMQ9unv/DpMsDOyaakhNNj4y6DYsLSxKHnC+Kq644OhkdEV+0v218qShag6O/8cE+n0Rh2QIGhCzGdCB4ylkXoqkWC79AHZbW3Xyvnbp4WO8Q0kemDbV1sKyZxG7kcuM4F+O7bnDHeswaS65Lrw+Swb4IWJ0pz8JQaX3tstUA5LKzPXtqf4rAP7QiMX4mwh8Ia7YGRhqe41JC4rDp6CZ2Wui6SvKWyxtd7pt55WcW0upsgxKYjeIfqBdY9gZiIsVKgEZuLXpQDbmaMi5+afSdfzQnQGjNWHzR0Qj9fcmTOhrW/PzpI/0OR preslav.peev@Preslav-Peev.local","_meta":{"notification":{"type":"form","formName":"CREATE_SSH","success":{"intlKey":"translate.page.ssh.imported_msg","intlValues":{"name":"sg"}},"error":{"intlKey":"translate.page.ssh.failed_import_msg","intlValues":{"name":"sg"}}}}}'
+	sleep 3
+	ssh -oStrictHostKeyChecking=no -p18765 ${user}@${server}
+elif [ "$1" = "-l" ]; then
+	curl -sX PUT "https://${server}/api-sgcp/v00/wordpress/1?auto_login=1&_site_token=${key}"   --data-raw '{"urlParams":{"auto_login":1}}'   --compressed | python -m json.tool | grep autologin | awk -F\" '{print $4}' > wplog.txt && cat wplog.txt
+else
+	echo -e "\e[93mUsage: -l for login; -s for SSH; -r for Refresh...\e[0m"
+fi
+}

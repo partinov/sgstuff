@@ -1,0 +1,1 @@
+curl -X GET http://firewall.sgadmins.com/firewall-manager.pl?action=search\&ip=$1\&server=am10.siteground.biz | tail -1 | cut -d '>' -f 2 | cut -d '<' -f 1

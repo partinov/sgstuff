@@ -1,0 +1,1 @@
+ssh -oStrictHostKeyChecking=no -p18765 $1@$2

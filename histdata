@@ -1,0 +1,3 @@
+curl -H 'apikey:H5Zh11C3vqGthlBgXEprNYsVa1h5viqd' -H 'Accept: application/json' https://api.securitytrails.com/v1/history/$1/dns/ns
+curl -H 'apikey:H5Zh11C3vqGthlBgXEprNYsVa1h5viqd' -H 'Accept: application/json' https://api.securitytrails.com/v1/history/$1/dns/a
+curl -H 'apikey:H5Zh11C3vqGthlBgXEprNYsVa1h5viqd' -H 'Accept: application/json' https://api.securitytrails.com/v1/history/$1/dns/mx

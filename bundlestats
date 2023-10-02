@@ -1,0 +1,1 @@
+open "https://avalon-grafana.sgvps.net/d/-WFc82PGk/bundle-stats?orgId=1&var-accountid=$1"

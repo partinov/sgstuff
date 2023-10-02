@@ -1,0 +1,15 @@
+while read p
+do
+    res=$(dig +short NS $p)
+    ns1=$(cut -d ' ' -f 1 <<<$res)
+    ns2=$(cut -d ' ' -f 2 <<<$res)
+    if [[ $ns1 != *"siteground"*  ]] || [[ $ns2 != *"siteground"* ]]; then
+        echo '================='
+        echo $p
+        echo $ns1
+        echo $ns2
+
+    fi
+
+done <site.txt
+echo '================='

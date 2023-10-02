@@ -1,0 +1,7 @@
+#/bin/bash
+cd;
+if grep -q -i -w $1 "banned.txt"; then
+  echo "Yes";
+else
+	echo "No";
+fi

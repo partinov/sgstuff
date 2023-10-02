@@ -1,0 +1,6 @@
+currentIp=$(ifconfig en0 | grep inet\ | cut -d ' ' -f 2)
+if [ "$currentIp" = "$(cat ~/last_ip.txt)" ]; then
+	echo "yes"
+else
+	echo "no"
+fi

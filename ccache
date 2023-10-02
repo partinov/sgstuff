@@ -1,0 +1,4 @@
+ssh -p 18765 -oStrictHostKeyChecking=no $1@$2 "cd www/$2/public_html/; wp cache flush; wp sg purge; wp rewrite flush; wp transient delete --expired; rm -rf wp-content/cache/*; rm -rf ~/.opcache/*; sed -i '$ d' ~/.ssh/authorized_keys2";
+curl -sX PURGE -D - http://$2 >> /dev/null;
+curl -sX PURGE -D - https://$2 >> /dev/null;
+echo "Dynamic cache purged!"

@@ -1,0 +1,11 @@
+Top 10 most common words in the data column: 
+Amazon: 8089
+S3: 6584
+in: 4237
+the: 3968
+and: 3672
+a: 3556
+of: 3240
+to: 2869
+objects: 2572
+is: 2405

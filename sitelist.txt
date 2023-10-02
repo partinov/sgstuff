@@ -1,0 +1,268 @@
+2772494	heerenvanhoorn.nl	c19394.sgvps.net	
+Total: 5126 MB
+Inodes: 30837 | MySQL: 3 MB | Email: 4698.2607421875 MB
+Active	
+2772495	koggenlandopglasvezel.nl	c19394.sgvps.net	
+Total: 242 MB
+Inodes: 8172 | MySQL: 69 MB | Email: 0 MB
+Active	
+2772496	2unlimitedstore.com	c19394.sgvps.net	
+Total: 727 MB
+Inodes: 26738 | MySQL: 126 MB | Email: 0 MB
+Active	
+2772497	p-c-d.org	c19394.sgvps.net	
+Total: 851 MB
+Inodes: 12234 | MySQL: 1 MB | Email: 157.869140625 MB
+Active	
+2772498	houseofvenis.nl	c19394.sgvps.net	
+Total: 329 MB
+Inodes: 11929 | MySQL: 12 MB | Email: 0 MB
+Active	
+2772501	uitvaartspecialist.nl	c19394.sgvps.net	
+Total: 345 MB
+Inodes: 14428 | MySQL: 13 MB | Email: 25.142578125 MB
+Active	
+2772503	vanderveenconsult.nl	c19394.sgvps.net	
+Total: 238 MB
+Inodes: 6583 | MySQL: 17 MB | Email: 0 MB
+Active	
+2772504	marcetingdevelopment.nl	c19394.sgvps.net	
+Total: 2271 MB
+Inodes: 60470 | MySQL: 89 MB | Email: 0 MB
+Active	
+2772505	adviesraadsociaaldomeinelburg.nl	c19394.sgvps.net	
+Total: 1776 MB
+Inodes: 12020 | MySQL: 13 MB | Email: 979.2041015625 MB
+Active	
+2772506	uitvaartwinkel.net	c19394.sgvps.net	
+Total: 1168 MB
+Inodes: 35784 | MySQL: 9 MB | Email: 720.9970703125 MB
+Active	
+2772507	tomenlilly.nl	c19394.sgvps.net	
+Total: 9685 MB
+Inodes: 45975 | MySQL: 26 MB | Email: 86.6435546875 MB
+Active	
+2772508	loonbedrijfsturmjacobs.nl	c19394.sgvps.net	
+Total: 2290 MB
+Inodes: 15950 | MySQL: 24 MB | Email: 0 MB
+Active	
+2772509	stichtingiton.nl	c19394.sgvps.net	
+Total: 1431 MB
+Inodes: 16994 | MySQL: 65 MB | Email: 0 MB
+Active	
+2772510	newfish.nl	c19394.sgvps.net	
+Total: 320 MB
+Inodes: 9405 | MySQL: 7 MB | Email: 0 MB
+Active	
+2772512	cinemaoostereiland.nl	c19394.sgvps.net	
+Total: 1404 MB
+Inodes: 23891 | MySQL: 25 MB | Email: 0 MB
+Active	
+2772514	bruijnskoffie.nl	c19394.sgvps.net	
+Total: 4396 MB
+Inodes: 25955 | MySQL: 53 MB | Email: 0 MB
+Active	
+2772515	fiftyonefashion.com	c19394.sgvps.net	
+Total: 396 MB
+Inodes: 17869 | MySQL: 13 MB | Email: 0.478515625 MB
+Active	
+2772516	judithvankampen.nl	c19394.sgvps.net	
+Total: 114 MB
+Inodes: 5290 | MySQL: 1 MB | Email: 0 MB
+Active	
+2772517	zeemansoord.nl	c19394.sgvps.net	
+Total: 12761 MB
+Inodes: 14370 | MySQL: 13 MB | Email: 0.849609375 MB
+Active	
+2772519	schoorsteen-inspectie.nl	c19394.sgvps.net	
+Total: 148 MB
+Inodes: 7347 | MySQL: 2 MB | Email: 0 MB
+Active	
+2772520	hethypotheekbureau.nl	c19394.sgvps.net	
+Total: 340 MB
+Inodes: 6052 | MySQL: 18 MB | Email: 0 MB
+Active	
+2772522	thuisvolcompassie.nl	c19394.sgvps.net	
+Total: 261 MB
+Inodes: 7414 | MySQL: 6 MB | Email: 0 MB
+Active	
+2772523	planning.meijer-sanitair.nl	c19394.sgvps.net	
+Total: 542 MB
+Inodes: 18025 | MySQL: 5 MB | Email: 0 MB
+Active	
+2772524	mariavanhoorn.nl	c19394.sgvps.net	
+Total: 349 MB
+Inodes: 18353 | MySQL: 4 MB | Email: 0 MB
+Active	
+2772525	2unlimitedshop.com	c19394.sgvps.net	
+Total: 42935 MB
+Inodes: 94694 | MySQL: 117 MB | Email: 570.34375 MB
+Active	
+2772527	hetverhaalvanhoorn.nl	c19394.sgvps.net	
+Total: 299 MB
+Inodes: 9364 | MySQL: 2 MB | Email: 0 MB
+Active	
+2772528	bls-educatief.nl	c19394.sgvps.net	
+Total: 509 MB
+Inodes: 9103 | MySQL: 23 MB | Email: 1.1103515625 MB
+Active	
+2772529	hdprojectbouw.nl	c19394.sgvps.net	
+Total: 552 MB
+Inodes: 12971 | MySQL: 7 MB | Email: 0 MB
+Active	
+2772530	blauweschuitonderwijs.nl	c19394.sgvps.net	
+Total: 2002 MB
+Inodes: 42508 | MySQL: 26 MB | Email: 0 MB
+Active	
+2772531	akomokids.com	c19394.sgvps.net	
+Total: 13364 MB
+Inodes: 50742 | MySQL: 1 MB | Email: 5.27734375 MB
+Active	
+2772532	meerindruk.nl	c19394.sgvps.net	
+Total: 12615 MB
+Inodes: 215745 | MySQL: 688 MB | Email: 0 MB
+Active	
+2772536	kramerkeukens.nl	c19394.sgvps.net	
+Total: 1725 MB
+Inodes: 22047 | MySQL: 28 MB | Email: 0 MB
+Active	
+2772537	nuancekasten.nl	c19394.sgvps.net	
+Total: 1517 MB
+Inodes: 24865 | MySQL: 18 MB | Email: 0 MB
+Suspended	
+2772538	thehaaisociety.nl	c19394.sgvps.net	
+Total: 1395 MB
+Inodes: 19929 | MySQL: 5 MB | Email: 2.416015625 MB
+Active	
+2772540	ariehollenberg.nl	c19394.sgvps.net	
+Total: 847 MB
+Inodes: 18682 | MySQL: 22 MB | Email: 0 MB
+Active	
+2772541	de46vanhetrademakersbroek.nl	c19394.sgvps.net	
+Total: 510 MB
+Inodes: 13804 | MySQL: 25 MB | Email: 0.6884765625 MB
+Active	
+2772543	koningsfeesten.nl	c19394.sgvps.net	
+Total: 175 MB
+Inodes: 7443 | MySQL: 2 MB | Email: 0 MB
+Active	
+2772544	sportcafezwaag.nl	c19394.sgvps.net	
+Total: 1911 MB
+Inodes: 13871 | MySQL: 10 MB | Email: 0 MB
+Active	
+2772545	bestcharcoal.eu	c19394.sgvps.net	
+Total: 8628 MB
+Inodes: 47829 | MySQL: 43 MB | Email: 2.1669921875 MB
+Active	
+2772546	arnoschilders.nl	c19394.sgvps.net	
+Total: 417 MB
+Inodes: 11038 | MySQL: 3 MB | Email: 103.4345703125 MB
+Active	
+2772547	astacureenbeauty.nl	c19394.sgvps.net	
+Total: 592 MB
+Inodes: 5533 | MySQL: 1 MB | Email: 499.9951171875 MB
+Active	
+2772548	slametsuiker.nl	c19394.sgvps.net	
+Total: 153 MB
+Inodes: 5763 | MySQL: 3 MB | Email: 0 MB
+Active	
+2772549	beleveninleven.nl	c19394.sgvps.net	
+Total: 750 MB
+Inodes: 12274 | MySQL: 7 MB | Email: 391.19921875 MB
+Active	
+2772551	suncoblinds.nl	c19394.sgvps.net	
+Total: 235 MB
+Inodes: 7004 | MySQL: 6 MB | Email: 0 MB
+Active	
+2772552	urbancolors.eu	c19394.sgvps.net	
+Total: 1319 MB
+Inodes: 7440 | MySQL: 0 MB | Email: 1266.625 MB
+Active	
+2772553	essentieeltherapeut.nl	c19394.sgvps.net	
+Total: 377 MB
+Inodes: 15875 | MySQL: 7 MB | Email: 54.34765625 MB
+Active	
+2772554	meco-offset.nl	c19394.sgvps.net	
+Total: 148 MB
+Inodes: 4645 | MySQL: 1 MB | Email: 0 MB
+Active	
+2772555	harmonieblokker.nl	c19394.sgvps.net	
+Total: 646 MB
+Inodes: 26107 | MySQL: 29 MB | Email: 47.2197265625 MB
+Active	
+2772556	iedereenglasvezel.nl	c19394.sgvps.net	
+Total: 2 MB
+Inodes: 335 | MySQL: 0 MB | Email: 0 MB
+Active	
+2772558	mamaminds.nl	c19394.sgvps.net	
+Total: 4437 MB
+Inodes: 37202 | MySQL: 45 MB | Email: 3703.705078125 MB
+Active	
+2772561	indrukwekkend.nl	c19394.sgvps.net	
+Total: 5648 MB
+Inodes: 162728 | MySQL: 516 MB | Email: 0 MB
+Active	
+2772562	westfriescultuurgoed.nl	c19394.sgvps.net	
+Total: 1 MB
+Inodes: 205 | MySQL: 0 MB | Email: 0 MB
+Active	
+2772563	padelkings.nl	c19394.sgvps.net	
+Total: 4265 MB
+Inodes: 44510 | MySQL: 27 MB | Email: 1714.3583984375 MB
+Active	
+2772564	rodoca.nl	c19394.sgvps.net	
+Total: 13673 MB
+Inodes: 35021 | MySQL: 2 MB | Email: 63.1259765625 MB
+Active	
+2772566	devriesmeesterschilders.nl	c19394.sgvps.net	
+Total: 1318 MB
+Inodes: 13603 | MySQL: 7 MB | Email: 940.6015625 MB
+Active	
+2772567	huisvolcompassie.nl	c19394.sgvps.net	
+Total: 247 MB
+Inodes: 6668 | MySQL: 8 MB | Email: 0 MB
+Active	
+2772568	noorderkerkhoorn.nl	c19394.sgvps.net	
+Total: 8964 MB
+Inodes: 29234 | MySQL: 17 MB | Email: 1429.21484375 MB
+Active	
+2812867	roseinpuglia.com	c19394.sgvps.net	
+Total: 84 MB
+Inodes: 5144 | MySQL: 1 MB | Email: 0 MB
+Active	
+2842823	service.breidertuinmachines.nl	c19394.sgvps.net	
+Total: 198 MB
+Inodes: 8232 | MySQL: 8 MB | Email: 0 MB
+Active	
+2957401	knitties.nl	c19394.sgvps.net	
+Total: 1146 MB
+Inodes: 20093 | MySQL: 9 MB | Email: 114.3525390625 MB
+Active	
+3864554	latestcollection.com	c19394.sgvps.net	
+Total: 454 MB
+Inodes: 27461 | MySQL: 23 MB | Email: 0 MB
+Active	
+4007449	verboomtechniek.nl	c19394.sgvps.net	
+Total: 363 MB
+Inodes: 8164 | MySQL: 11 MB | Email: 0 MB
+Active	
+4010810	cinemaenkhuizen.nl	c19394.sgvps.net	
+Total: 763 MB
+Inodes: 19868 | MySQL: 17 MB | Email: 0 MB
+Active	
+4031165	vakbladvroeg.nl	c19394.sgvps.net	
+Total: 377 MB
+Inodes: 11638 | MySQL: 27 MB | Email: 0 MB
+Active	
+4152619	edities.milieu-magazine.nl	c19394.sgvps.net	
+Total: 337 MB
+Inodes: 6813 | MySQL: 22 MB | Email: 0 MB
+Active	
+4198176	benvancranenburgh.nl	c19394.sgvps.net	
+Total: 431 MB
+Inodes: 9012 | MySQL: 16 MB | Email: 0 MB
+Suspended	
+4439167	amstelland-international-school.nl	c19394.sgvps.net	
+Total: 733 MB
+Inodes: 15875 | MySQL: 17 MB | Email: 0 MB
+Active

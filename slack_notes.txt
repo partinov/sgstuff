@@ -1,0 +1,389 @@
+=======================================================================================================================================
+SG SPF: v=spf1 +a +mx +ip4:34.67.241.9 include:_spf.mailspamprotection.com ~all 
+Google SPF: include:_spf.google.com
+=======================================================================================================================================
+JIRA login: Username: cs-reports Password: uR54@!fGzz 
+=======================================================================================================================================
+Terminated plan: Thank you for your patience! It seems that the hosting plan expired on  and it had a grace period for 30 days after that, during which it could’ve been renewed. I am afraid that once the grace period expires, the plan is deleted along with all websites, files, backups, etc. and can no longer be recovered. However your SiteGround account is still active and running which means that you can purchase a new hosting plan and use it to host your sites (this would not recover them from the old plan) 
+=======================================================================================================================================
+Clear WP caches via SSH: wp cache flush; wp sg purge; wp rewrite flush; wp transient delete --expired; rm -rf wp-content/cache/*; rm -rf ~/.opcache/*
+=======================================================================================================================================
+For WP Charset issues: define( ‘DB_CHARSET’, ‘utf8mb4’ );
+=======================================================================================================================================
+Access data from expired plan: I have checked your account and it seems that your hosting plan has expired. It is currently within a 30 day grace period where it can be renewed without any data loss (once that period is over the account will be deleted if not renewed). The only option to regain access to the files is to renew the account, I am afraid. You can renew only for a single month if you’d like (edited) 
+=======================================================================================================================================
+502 error explanation: This usually happens after some kind of WordPress update. It could be a plugin, theme, etc. that has updated and has corrupted the NGINX cache. It also sometimes happens due to a 3rd party caching plugin which interferes with our caching and causes it to break.
+
+3 replies
+
+Ако проблема се реши, ето няколко обяснения от тикетите:
+“Apparently the PHP interpreter which is run as Apache module (due to the use of Ultrafast PHP) was stuck and PHP executions could not be completed.
+I had to switch the PHP setup to Standard and then back to Ultrafast, which essentially restarted the module and now the website is working as expected.”
+или:
+“I was able to resolve the issue by re-activating the Ultrafast PHP from your Site Tools --> Devs --> PHP Manager tool.
+ It appears that there was some temporary glitch which has caused the issue and it should not re-appear.”
+Petar Artinov
+  2 years ago
+The PHP interpreter which is run as Apache module (due to the use of Ultrafast PHP) was stuck and PHP executions could not be completed.
+Switching the PHP setup to Standard and then back to Ultrafast essentially restarted the module and now the website is working as expected.
+Petar Artinov
+  9 months ago
+Usually, a 502 is caused (but not limited to) the overall configuration of the web application. I’ve personally seen how plugins, or themes could be the main culprit in such scenarios. Another key aspect that is worth mentioning is some processes on the website that are leading to an overload on the UltraFast PHP set-up thus causing the PHP interpreter to get stuck. Switching the PHP mode from Ultrafast to Standard and then back to Ultrafast resets the interpreter thus resolving the issue.
+=======================================================================================================================================
+Run magento command with diffenrent PHP version (PHP 7.1 in this case)
+/usr/local/php71/bin/php-cli bin/magento setup:upgrade
+=======================================================================================================================================
+CPU issues:
+ Thank you for your patience! I checked the website and it seems like it has gone above the maximum allowed CPU usage for the hosting plan. This can be seen by going to your SiteGround user area->Services section->Manage button for the hosting plan->Statistics tab->Graph at the bottom.
+Upon further investigation in SiteTools->Statistics->Traffic Statistics->Behaviour tab, I found that the admin-ajax.php file on the website has been accessed an extremely large number of times which usually indicates an issue with the WordPress installation itself or a plugin on it.
+We generally recommend having a web developer look at the issue but, alternatively, you could try implementing the following 2 fixes:
+url:www.siteground.com/tutorials/wordpress/real-cron-job/ and url:www.siteground.com/tutorials/wordpress/limit-heartbeat/ but we still highly recommend having a developer check the website.
+
+Another part of the issue is bot traffic and you can check this article here URL:https://eu.siteground.com/kb/prevent-malicious-bots-visiting-website/ for a solution
+
+For the time being, I can increase the limit and thus have the sites go back online but if the limits are reached again, the websites will remain disabled until the start of next month when the limit resets 
+=======================================================================================================================================
+Reset permissions through SSH
+find . -type f -print0 | xargs -0 chmod 0644 && find . -type d -print0 | xargs -0 chmod 0755
+=======================================================================================================================================
+Redirect one domain to another
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^domain-to-redirect-from.com [OR]
+RewriteCond %{HTTP_HOST} ^www.domain-to-redirect-from.com 
+RewriteRule ^(.*)$ https://domain-to-redirect-to.com/somepage [L,R=301]
+
+Wildcard redirect
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^abc.com [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.abc.com [NC]
+RewriteRule ^(.*)$ http://abc.co/$1 [L, R=301,NC]
+
+Naka’s wildcard redirect
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.)?OLDDOMAIN\.TLD$
+RewriteRule ^(.*)$ https://www.NEWDOMAIN.TLD%{REQUEST_URI} [L,R=301]
+
+Redirect www to non-www
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+Wildcard redirect of subfolder
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.)?OLDDOMAIN\.TLD$
+RewriteRule ^SUBFOLDER(.*)$ https://www.NEWDOMAIN.TLD%{REQUEST_URI} [L,R=301]
+=======================================================================================================================================
+ ticket#1
+Appreciate the time and patience. Thank you!
+I’ve attempted to fix and update this issue, unfortunately to no avail. That being said, this must and will be Helped with right away!
+Therefore I have taken the right actions, and already notified our Senior Technical Team with precise information and logs for this! With the highest of Priority!
+They are currently working on it as we speak, and the outcome will be provided in this link ->  url:https://my.siteground.com/support/history
+ticket#2
+I can relate that you have spend a lot of time over this, and it must be frustrating at this point. For which I believe the best course of action here is to escalate it to our Senior department in previewing in details what might’ve caused this. Therefor I have posted a Ticket on your behalf directly to our Technicians with provided Details regarding this. The outcome will be present within 10-15minutes in the my.siteground.com/support/history (edited) 
+=======================================================================================================================================
+ Inodes of folders within dir
+du --inodes --max-depth=0 * | sort -n
+=======================================================================================================================================
+ Force all URLs to lowercase
+RewriteEngine On
+RewriteCond expr "tolower(%{REQUEST_URI}) =~ /(.*)/"
+RewriteRule [A-Z] %1 [R=301,L]
+=======================================================================================================================================
+Deny Change PHP max execution time 
+ The php max execution time is a global PHP limit and modifying it would affect the rest of the websites hosted in the same shared hosting environment as yours. As a result of that, the limit cannot be modified, I am afraid but we have found that even with the limit set to 120 seconds, the themes, plugins, etc. on the website still work without any issues which is why the limit was set to this value. This is also described in this article here URL:https://www.siteground.com/kb/how_to_change_the_value_of_a_php_setting/ 
+=======================================================================================================================================
+Malware:
+ I am afraid that, it seems like the website has been infected with malware. There is a ticket open regarding the issue - Ticket ID  and it can be found here url:my.siteground.com/support/history
+I would suggest checking the ticket since it provides tips and the steps necessary to have this resolved. Once the malware has been cleaned, you can reply to the ticket and our techs will put it back online in case everything looks good (only they have the access to do that) (edited) 
+
+2 replies
+
+I would suggest checking the ticket since it provides tips and the steps necessary to have this resolved. Once the malware has been cleaned, you can reach back to us and we will submit a new ticket to have the site checked by our senior technical team once more and put it back online in case everything looks good (only they have the access to do that)
+Petar Artinov
+  4 months ago
+You can see a list of the infected files at the SiteGround Client Area ( my.siteground.com ) ➔ “View” button for the malware notice ➔ Scroll to the bottom ➔ Click “view evidence” This article here https://eu.siteground.com/kb/how_to_clean_my_files_from_malicious_code/ can help with cleaning the files. If you don’t feel comfortable doing that, we also offer a paid website cleaning service at https://my.siteground.com/support/contact ➔ Other ➔ Website security
+=======================================================================================================================================
+ Block malicious bots
+RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+RewriteCond %{HTTP_USER_AGENT} (bot|crawl|robot|spider)
+RewriteCond %{HTTP_USER_AGENT} !(bingbot|bing|Google|msn|MSR|Twitter|Yandex) [NC]
+RewriteRule ^/?.*$ "http\:\/\/127\.0\.0\.1" [R,L]
+=======================================================================================================================================
+Has ex. ticket about issue
+ Thank you for your patience! I see that there is a ticket open regarding the issue - TID . What I would suggest is replying to the ticket itself via url:https://my.siteground.com/support/history since that would ensure the fastest route possible to have our senior technicians handling the ticket check if everything looks good and then put the site back online (only they have the access to do that) (edited) 
+=======================================================================================================================================
+Propagation tell them to go away:
+ The propagation period is a global period that we have no control over, and it is the time needed for the changes to apply to all the servers around the world. It could take just a few minutes, hours or in the worst case - up to 24-72 hours 
+=======================================================================================================================================
+Handlers for different PHP versions 
+AddHandler application/x-httpd-php70 .php .php5 .php4 .php3
+AddHandler application/x-httpd-php56 .php .php5 .php4 .php3
+=======================================================================================================================================
+Issues after PHP version change:
+ This is caused due to our PHP update process that is currently running on the servers. Sites running on PHP 7.2 or lower are automatically upgraded to PHP 7.4 since those older versions are no longer safe and secure. The older version will remain available for a few more days but I would recommend looking into updating the site so it could be compatible with the newer versions of PHP
+
+5 replies
+This is caused due to our PHP update process that is currently running on the servers which we sent out a few emails about over the past 12 months. Sites running on PHP 7.2 or lower (yours was running on 7.0) are automatically upgraded to PHP 7.4 since those older versions are no longer safe and secure due to the fact that the official PHP developer team has stopped updating them.
+Petar Artinov
+  2 years ago
+The older version will remain available for a few more days and I can switch back to it now but I would recommend looking into updating the site so it could be compatible with the newer versions of PHP as soon as possible
+Petar Artinov
+  2 years ago
+We have also provided further information in this post here url:www.siteground.com/blog/moving-to-php-7-4/
+Petar Artinov
+  2 years ago
+There is no exact estimate but the process is already ongoing it the older versions will be disabled very soon - within the next few days (up to a week or two max)
+Petar Artinov
+  1 year ago
+I am afraid that the older PHP versions are no longer available and they cannot be reverted. What I would suggest is going to my.siteground.com/support/contact > Site is down, slow or displaying an error > Issues after the automatic PHP update and contact our dedicated team related to the PHP update
+=======================================================================================================================================
+Canned message about blacklisted mail service IPs:
+ I would first like to apologise for any inconvenience caused. This is caused by a known issue related to Microsoft blocking some of the IPs we use for our outgoing mail servers. Our system administrators are already aware of the issue and currently working on delisting the blacklisted IP addresses as soon as possible as well as a permanent solution to avoid that from happening in the future. I would also like to thank you for reporting that since any additional information is of huge help. In the meantime, I would suggest trying to send those emails again since our mail service uses a cluster of servers and thus sending the email again could cause it to be sent from a different server which does not use a blacklisted IP. 
+
+=======================================================================================================================================
+SG NS and IPs
+ ns1.siteground.net is 75.2.77.104
+ns2.siteground.net is 99.83.229.113
+=======================================================================================================================================
+SSLs info:
+ That depends entirely on your preference. The options are the following:
+1.Regular Let’s encrypt SSL - it is free and covers the main domain of the website
+2.Wildcard Let’s encrypt - it is also free but covers the main domain as well as subdomains of the main domain
+3.Premium Wildcard - works just like the free Wildcard but also offers a 10,000USD guranatee (edited) 
+=======================================================================================================================================
+Shared email limits:
+ StartUp
+Email Sends per Hour: 400
+Recipients per Email: 40
+Attachment Size: 50 MB
+Emails Received per Minute: 20
+GrowBig
+Email Sends per Hour: 400
+Recipients per Email: 40
+Attachment Size: 50 MB
+Emails Received per Minute: 20
+GoGeek
+Email Sends per Hour: 800
+Recipients per Email: 80
+Attachment Size: 50 MB
+Emails Received per Minute: 20
+=======================================================================================================================================
+Staging's A records not pointed to SG
+ The reason for that is because the domain uses non-SiteGround nameservers and thus the A record for the staging2 subdomain was not created automatically. This can be easily resolved by going to GoDaddy’s page (since the nameservers are hosted with them) and setup an A record for staging2 and another one for www.staging2 subdomain to point to the SiteGround Site IP - 
+=======================================================================================================================================
+Card Inactive:
+ I see that the card has been marked as inactive in our system which is causing the issue. What I can do is remove it from your account which will allow you to make a payment and thus have it added to the account for future use. Does that sound good?
+=======================================================================================================================================
+Check disk usage of folders through SSH
+du -sch .[!.]* *
+=======================================================================================================================================
+Check if site is hosted with SG (add to the end of domain)
+ .well-known/sg-hosted-ping
+=======================================================================================================================================
+WP Optimize issue:
+ The error is caused by the WP Optimise plugin on the website. You are actually the third person I’ve had in the past hour with that error. As a special exception, I can comment out the piece of code in the plugin which is causing the issue if you’d like and that might get the site back online however I would suggest reaching out to the developers/support of WP Optimise to report the issue to them so they could provide a proper and more permanent solution to the issue (edited) 
+
+1 reply
+I have commented out lines 811-824 in the file-based-page-cache-functions.php file of the plugin which has brought the site back online and you can log into the WordPress admin dashboard to disable/remove the plugin if you’d like
+=======================================================================================================================================
+ Redirect any page to same page of a different domain
+RewriteEngine on
+RewriteRule ^(.*)$ https://new-domain.com/$1 [R=301,L]
+=======================================================================================================================================
+Temporary issue with SG CA canned message
+ I am seeing the same on my end and that is caused due to a temporary issue with the Client area which is currently being checked by our system administrators (it happened a few minutes ago) - we are looking to have it resolved as soon as possible. In the meantime we apologise for any inconvenience caused and appreciate the patience! 
+=======================================================================================================================================
+Cloudflare global issue canned message:
+ A few hours ago we did receive similar reports regarding the 525 Handshake error. Our System Administrators performed a deep investigation and confirmed that everything on our end is flawlessly working.
+Would you be able to Purge the Cloudflare cache from within your Cloudflare.com account
+and review the website on a new browser please
+Allow me to provide you a screenshot of how the site is loading on my end at the moment -
+=======================================================================================================================================
+Check (old) spam experts outgoing server IPs
+dig +short A delivery.mailspamprotection.com
+
+Check (new) spam experts outgoing server IPs
+dig delivery.antispam.mailspamprotection.com +short
+=======================================================================================================================================
+Temporary server down issue canned message:
+ We are currently facing difficulties with one of our servers where your website is hosted. Our Administrators are working to resolve the issue as quickly as possible; further information is available in your Client area under “Status Update about Your Hosting Server”
+Please accept our apologies for the caused inconveniences.
+
+V2:
+ I am truly sorry about the issue you have experienced! Our Administrators are working to resolve the issue as quickly as possible; further information is available in your Client area under “Status Update about Your Hosting Server”
+Please accept our apologies for the caused inconveniences.
+
+There is currently no ETA on the matter however you can monitor “Status Update about Your Hosting Server” in your Client area for updates which will be provided as soon as possible
+=======================================================================================================================================
+ Tade’s magic quote (move site to a new plan) - !!!DO NOT USE!!!
+Migration of websites from one to another account with us both using Site Tools
+First, you need to add a new temporary domain to the new account from the User area--Websites--New website orange button at the top right corner.
+After that, you can move the content of the website by using our SG migrator plugin. The steps are listed here https://www.siteground.com/tutorials/wordpress/wordpress-automatic-migrator/
+Once it is done and you test the website to be sure that everything is working properly, the domain should be renamed for the old account. You will be able to change the temporary domain to the actual one. The steps for the domain change are listed in this article https://www.siteground.com/tutorials/getting-started/change-sites-domain-name/
+
+1 reply
+Yes, there is a way to do that through your side but involves a few more steps. Such process would go as follows:
+1.Create a new website slot in the new plan with the temporary domain option
+2.Transfer the website contents via any of the regular website transfer methods that we offer/suggest (SiteGround Migrator, for example for the WordPress sites) as well as any additional data/settings such as email accounts, DNS records, etc.
+3.Remove/rename the website slot in the old plan
+4.Rename the website slot in the new plan to the actual domain it will be using
+5.(For domains that do not use the SiteGround central DNS i.e. the ns1.siteground.net and ns2.siteground.net nameservers) Make the necessary DNS adjustments to the nameservers/A records to point to the new site slot
+=======================================================================================================================================
+Stop SG CDN renewal:
+ The SiteGround CDN renewal can be easily disabled via the SiteGround client area ( my.siteground.com ) > Websites section > All site options button for the site > Scroll to the bottom > Click the 3 dot menu for the Premium CDN option > Renewal settings > Toggle the option off and click Confirm
+=======================================================================================================================================
+What web server we use:
+ We use a combination of NGINX and Apache. NGINX works as a reverse proxy whereas Apache is the web server itself which is why the rules added need to be for Apache and are added to the .htaccess
+=======================================================================================================================================
+Create a staging site from a backup of the live site
+1.Create a manual backup via SiteTools > Security > Backups
+2.Restore the site files with the "Restore files" option and the "Restore files to a folder" option on the next step
+3.Move those files from the .RESTORES folder in the file manager to the staging site's public_html
+4.Restore the main site database which will overwrite the live site database
+5.Go to SiteTools > Site > MySQL > phpMyAdmin and export the database from there
+6.Restore the live site's database via the new backup that you created in step 1
+7.Import the database file via phpMyAdmin into the database for the staging
+8.Reconfigure the wp-config file of the staging to work with the staging database
+9.Run a Search and replace on the staging database to work via the staging URLs
+=======================================================================================================================================
+ HSTS:
+https://stackoverflow.com/questions/24144552/how-to-set-hsts-header-from-htaccess-only-on-https
+https://www.saotn.org/force-hsts-in-apache-htaccess/
+The HSTS support is explained in the following article:
+https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
+The specified web policy defines a specific time that specific website must be accessed only via HTTPS connection. The specified rule on our servers can be added by using the following .htaccess lines:
+<IfModule mod_headers.c>
+Header always set Strict-Transport-Security “max-age=31536000”
+</IfModule>
+Then you need to clean our server caches here is the article how it could be done:
+https://www.siteground.com/kb/clear-site-cache/ (edited) 
+=======================================================================================================================================
+ Run composer with custom PHP version (7.3 in this case):
+/usr/local/php73/bin/php-cli /usr/local/bin/composer.phar --version
+=======================================================================================================================================
+Customer wants renewal at promo price (Chat should be offloaded now)
+ The 80% off discount that is currently available is only for additional hosting plan purchases, plan upgrades and purchases of SiteScanner and SiteGround CDN. For plan renewals we currently have 20% and 30% off the regular renewal price for 2 and 3 year renewals respectively
+=======================================================================================================================================
+Import DB via SSH
+mysql -u USER -p PASS DATABASE < backup.sql
+=======================================================================================================================================
+Meme site:
+ https://www.kreemofficial.com/archive
+=======================================================================================================================================
+Elementor pro known issue:
+ The error is related to the Elementor Pro plugin on the website and can be resolved by going to SiteTools > Site > File manager > public_html folder > wp-content folder > plugins folder > elementor-pro folder > modules folder > theme-builder folder > documents folder > open the theme-document.php file > comment out line 45 by adding // at the start of the line and save the changes
+
+1 reply
+However bear in mind that this is an issue within Elementor’s code and this is a temporary fix hence why if the plugin is updated the error will come back and the best option is to contact Elementor support directly for a more permanent solution
+=======================================================================================================================================
+Point domain to Shopify:
+ The domain can be easily connected to Shopify via the following few steps:
+1.Go to SiteTools > Domain > DNS zone editor > Modify the A record for DOMAIN.COM to point to 23.227.38.65
+2.In the same DNS zone editor page Delete the A record for www.DOMAIN.COM
+3.Select the CNAME type in the form at the top of the page and fill out the boxes as follows:
+Name - www
+TTL - 24 hours
+Resolves to - shops.myshopify.com (edited) 
+=======================================================================================================================================
+WP ML plugin global issue:
+ Thank you for your patience! The issue is caused by the WP ML Plugins on the website - they are currently experiencing a global issue however the great news is that the WordPress admin dashboard is still accessible via the steps shown here URL:https://www.siteground.com/kb/how-to-login-to-wordpress/#:~:text=Use%20the%20Auto%20Login%20feature%20in%20Site%20Tools and you can login through there > Go to the Plugins section and deactivate those plugins
+=======================================================================================================================================
+BETheme global issue canned message:
+ Thank you for your patience! This error is caused by the betheme theme on the website which appears to be affecting all websites using the newest WordPress version and an older version of the theme. The best option is to go to SiteTools > Site > File manager > public_html folder > wp-content folder > themes folder > delete the betheme folder then go to themeforest.com and download the newest version of the theme and upload the theme files to the same themes folder in File manager
+=======================================================================================================================================
+Force close canned:
+ As we have gone beyond this request, would there be anything else I could assist with or would you be good with ending this conversation here?
+=======================================================================================================================================
+ IonCube
+php.ini:
+zend_extension = /usr/local/php$V/lib/php/extensions/ioncube.so
+.htaccess:
+SetEnv PHPRC /home/customer/www/domain.com/public_html/php.ini
+=======================================================================================================================================
+ ➔
+=======================================================================================================================================
+CPU comparison between shared and Cloud
+ On shared hosting multiple different websites on different clients are on the same server and the CPU limitations are set so that everybody gets its fair share of resources.
+Cloud servers are different. these are private servers so they are not measured with CPU seconds as you are not sharing the CPU with anyone. With these servers, you have CPU and RAM dedicated only to your websites on the server.
+The JumpStart cloud offers 4 CPU cores and 8 GB ram, so that makes 4 CPU seconds for 1 second in real-time. 1 hour has 3600 seconds, so the JumpStart Cloud offers 14 400 CPU seconds per hour or 345 600 per day. (edited) 
+=======================================================================================================================================
+Global issue canned message:
+ We do recognise that many of our customers need the websites back online as soon as possible which is why we are doing everything we can to have this resolved as soon as possible
+We do not have an exact ETA as this issue is outside of our network and our control however we have reported the problem to our upstream provider and expect a resolution shortly.
+=======================================================================================================================================
+Phishing emails canned:
+ Those emails were sent a few hours earlier today and were reported to our system administrators shortly after. The sender and IP was blocked and reported - there will be no such emails from them anymore
+
+2 replies
+This is a phishing email that was sent a few hours earlier today and was reported to our system administrators shortly after. The sender and IP was blocked and reported - there will be no such emails from them anymore
+=======================================================================================================================================
+Backups global issue canned:
+ There is a problem currently affecting the backup system which causes them to not appear in the SiteTools panel. The backups are still there - they are just not shown in the SiteTools panel. A fix is currently being applied and the issue should be resolved shortly
+=======================================================================================================================================
+Issue after PHP upgrade:
+ Thank you for your patience! I have checked the website and it appears that it was configured to work on an old PHP version which has been deprecated and is no longer available. This is caused due to our PHP update process that is currently running on the servers which we sent out a few emails about over the past 18 months. The main reason for that is since those older versions are no longer safe and secure due to the fact that the official PHP developer team has stopped updating them. We have also provided further information in this post here url:www.siteground.com/blog/moving-to-php-7-4/
+
+1 reply
+For the time being, I can deactivate the old version currently set for the site and this will allow you to go through the site and check for any errors which would indicate if any parts of the site need to be updated
+=======================================================================================================================================
+Blacklisted spam experts IPs:
+ Thank you for your patience and understanding. In order to improve our anti-spam solution and extend its capabilities we added a new region to the system. Messages sent from the new region are sent from IPs different than the other regions. These IPs are still in process of generating their reputations which is causing delays in email service usage. In this situation, I am recommending allowing a few hours before trying to use the email service, by that time the issue should be resolved. 
+=======================================================================================================================================
+Git Issue fix:
+git config --global pack.threads "1"
+=======================================================================================================================================
+Gutenberg blocks plugin known issue:
+ Thank you for your patience! There is an issue with the WooCommerce Gutenberg Products Block plugin on the website. It can be temporarily fixed by going to SiteTools ➔ Site ➔ File manager ➔ public_html folder ➔ wp-content folder ➔ plugins folder ➔ woo-gutenberg-products-block folder ➔ src folder ➔ Interactivity folder ➔ directives folder ➔ open the wp-html.php file and comment out lines 3-8 by adding // at the start of each line then save the changes
+=======================================================================================================================================
+Clear Cherry cache:
+For Cherry Framework itself:
+less/bootstrap.less.cache
+less/style.less.cache
+Then inside my child theme (this may be different for you, but find the .cache files and delete them if you're getting errors):
+theme root/style.less.cache
+bootstrap/less/bootstrap.less.cache
+=======================================================================================================================================
+Themes issue after WP 6.2 update
+ Thank you for your patience! This is caused due to a known conflict with the new WordPress version 6.2 and most themes currently out there. The best option would be to go to SiteTools ➔ WordPress ➔ Autoupdates ➔ last backup tab ➔ Click the restore button to restore it to the previous version and then click on the “Skip update” button to avoid the site from autoupdating until a new WordPress version is released with a fix
+It could also be worth disabling native WordPress autoupdates via the steps shown here https://eu.siteground.com/tutorials/wordpress/auto-updates/ (edited) 
+=======================================================================================================================================
+Clear dynamic cache through SSH
+ curl -X PURGE http://127.0.0.1/ -H “Host: domain.com”
+=======================================================================================================================================
+ (☞ ͡° ͜ʖ ͡°)☞𓂸
+=======================================================================================================================================
+Go to dev plugin issue:
+ It appears that there is an issue with the PLUGIN plugin on the website. What I would suggest is going to SiteTools ➔ WordPress ➔ install & manage ➔ 3 dot menu for the WordPress install ➔ Disable plugins option (the process is also shown here - https://eu.siteground.com/kb/disable-wordpress-plugins-site-tools/ ).
+This will disable all plugins on the site and allow you to access the WordPress admin dashboard. After that you activate all plugins you need (except for the problematic plugin). If you wish to keep using PLUGIN, I would suggest reaching out to the developers/support of the plugin directly since they are the most familiar with their product and would be able to provide the best solution to the issue
+=======================================================================================================================================
+ WordPress work with parked domain:
+define('WP_SITEURL', 'https://'.$_SERVER['HTTP_HOST']);
+define('WP_HOME', 'https://'.$_SERVER['HTTP_HOST']);
+=======================================================================================================================================
+SSH search for string in all files
+ grep -ril “some string”
+=======================================================================================================================================
+ Check SSL with cURL
+curl -vvI https://www.domain.com/ | awk 'BEGIN { cert=0 } /^\* SSL connection/ { cert=1 } /^\*/ { if (cert) print }'
+=======================================================================================================================================
+A record not pointed after US datacenter migration:
+ The reason for that is since the domain’s A records have not been changed to point to the new SiteGround site IP for the website. The IP changed as part of the US datacenter migration (there was an email about that) and there is currently a DNS forwarder from the old to the new IP. This makes it seem like all website traffic is coming is from the old IP which causes the SiteGround Security plugin to block the old IP and show the message you see. I have removed the block now but to avoid the issue in the future, you need to change the A records for the domain from IP to IP
+
+1 reply
+The site IP changed since the website was moved to a new server in a new datacenter as part of the US datacenter migration (there were emails about that) 
+=======================================================================================================================================
+SiteScanner false positives issue:
+ The malware warning was caused by a few rules that were added to
+SiteScanner which causes false positive results which is why you got the warning. The rules were subsequently removed which is why your next scans came back clean. To summarise - there are no issues with the website and there is no need to worry about the malware warning
+=======================================================================================================================================
+PRO and X themes issue after WP 6.2 steps to fix:
+ https://theme.co/forum/t/important-wp-6-2-issue-please-read-before-updating/104085
+=======================================================================================================================================
+Gutenberg plugin known issue:
+ I am sorry to hear about your issue! That's a problem with the Gutenberg plugin on the website. I suggest going to SiteTools ➔ WordPress ➔ Install & manage ➔ 3 dot menu for the website ➔ Disable plugins option. After that you can go to the WordPress admin dashboard, update the plugin and reactivate the website plugins
+=======================================================================================================================================
+Change default PHP version in SSH
+echo alias php='php82' >> ~/.bash_profile && source ~/.bash_profile && php -v
+=======================================================================================================================================

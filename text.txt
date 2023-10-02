@@ -1,0 +1,46 @@
+{
+    "data": {
+        "cert_id": 1,
+        "created": 1614839800,
+        "docroot": "public_html",
+        "domain_type": "main_domain",
+        "extra": {
+            "mx_fail_resolve": 0
+        },
+        "id": 1,
+        "in_tld": 1,
+        "main": 1,
+        "name": "eco-divers.com",
+        "se_mx": 3,
+        "settings": {
+            "cdn_enabled": 0,
+            "dkim": 1,
+            "dynamic_cache": 1,
+            "https_enforce": 1,
+            "https_rewrite_links": 0,
+            "protect_captcha": 1,
+            "protect_captcha_auto": 1,
+            "remote_domain": 0,
+            "remote_domain_auto": 1,
+            "se_enabled": 1,
+            "staging": 0,
+            "static_cache_enabled": 1,
+            "static_direct": 1,
+            "suspended_cdn": 0,
+            "wildcard": 0
+        },
+        "sg_hosted": 1,
+        "sg_hosted_www": 1,
+        "updated": 1651721814
+    },
+    "message": "OK",
+    "options": {
+        "ets": "1653534184.70635",
+        "sts": "1653534184.64453"
+    },
+    "rev": 7,
+    "status": 200,
+    "task_id": "1653534184.644235.83dfe10a",
+    "uts": 1632810017
+}
+

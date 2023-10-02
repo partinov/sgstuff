@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>phrase</key>
+		<string>➔</string>
+		<key>shortcut</key>
+		<string>&gt;</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>All the best and stay safe!</string>
+		<key>shortcut</key>
+		<string>abs</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>I hope we are still connected?</string>
+		<key>shortcut</key>
+		<string>afk</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Just checking if I didn't lose you there?</string>
+		<key>shortcut</key>
+		<string>afk2</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Is there anything else I could assist with?</string>
+		<key>shortcut</key>
+		<string>assist!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ Security ➔ Backups ➔ 3 dot menu for a backup </string>
+		<key>shortcut</key>
+		<string>backups!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Goodbye!</string>
+		<key>shortcut</key>
+		<string>bb</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string> I hope you have a great rest of the day and a wonderful week ahead!</string>
+		<key>shortcut</key>
+		<string>bb1</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string> I hope you have a great rest of the day as well and a wonderful week ahead!</string>
+		<key>shortcut</key>
+		<string>bb2</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string> I hope you have a great rest of the day and a wonderful weekend ahead!</string>
+		<key>shortcut</key>
+		<string>bb3</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string> I hope you have a great rest of the day as well and a wonderful weekend ahead!</string>
+		<key>shortcut</key>
+		<string>bb4</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>bounce-back</string>
+		<key>shortcut</key>
+		<string>bounceback</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>CDN</string>
+		<key>shortcut</key>
+		<string>cdn</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ Speed ➔ CDN</string>
+		<key>shortcut</key>
+		<string>cdn!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>certificate</string>
+		<key>shortcut</key>
+		<string>cert</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Cloudflare</string>
+		<key>shortcut</key>
+		<string>cf</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>the SiteGround Client Area ( my.siteground.com ) ➔  Websites ➔ All site options button for the site ➔ 3 dot menu ➔ Change primary domain option. The process is also shown here - https://www.siteground.com/tutorials/getting-started/change-sites-domain-name/</string>
+		<key>shortcut</key>
+		<string>changedomain!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>The nameservers can be easily changed via the SiteGround Client Area ( my.siteground.com ) ➔  Services section ➔ Domains subsection ➔ Manage button for the domain ➔ Change nameservers option on the lower right. The process is also shown here https://www.siteground.com/kb/how_to_change_my_ns_record/</string>
+		<key>shortcut</key>
+		<string>changens!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>CNAME</string>
+		<key>shortcut</key>
+		<string>cname</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>collaborator</string>
+		<key>shortcut</key>
+		<string>collab</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>database</string>
+		<key>shortcut</key>
+		<string>db</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>databases</string>
+		<key>shortcut</key>
+		<string>dbs</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>I would suggest reaching out to the developers/support directly since they are the most familiar with their product and would be able to provide the best solution to the issue </string>
+		<key>shortcut</key>
+		<string>deev</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>DNS</string>
+		<key>shortcut</key>
+		<string>dns</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>The DNS changes usually require 3-4 hours at least to fully apply and could take up to 24-72 hours in some very rare cases which is why I would suggest allowing a bit more time and check again later.</string>
+		<key>shortcut</key>
+		<string>dnspropagation</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ Domain ➔ DNS zone editor </string>
+		<key>shortcut</key>
+		<string>dnszone!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>This needs to be done through your side however I would be more than happy to assist with any other questions you might have about the process</string>
+		<key>shortcut</key>
+		<string>doitforme</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>the SiteGround Client Area ( my.siteground.com ) ➔  Services section ➔ Domains subsection ➔ Manage button for the domain ➔ 3 dot menu ➔ Renewal settings ➔ Toggle the option off and click Confirm</string>
+		<key>shortcut</key>
+		<string>domainrenewal!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>the SiteGround Client Area ( my.siteground.com ) ➔  Services ➔ Manage button for the hosting plan ➔ 3 dot menu ➔ Downgrade option</string>
+		<key>shortcut</key>
+		<string>downgrade!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ Speed ➔ Caching ➔ Dynamic caching ➔ Chache flush button on the right</string>
+		<key>shortcut</key>
+		<string>dynamiccache!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Elementor</string>
+		<key>shortcut</key>
+		<string>elementor</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ Email ➔ Accounts</string>
+		<key>shortcut</key>
+		<string>emailaccounts!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>EPP</string>
+		<key>shortcut</key>
+		<string>epp</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ Site ➔ File manager</string>
+		<key>shortcut</key>
+		<string>filemanager!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>FTP</string>
+		<key>shortcut</key>
+		<string>ftp</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ Site ➔ FTP accounts </string>
+		<key>shortcut</key>
+		<string>ftpaccounts!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>GoDaddy</string>
+		<key>shortcut</key>
+		<string>godaddy</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>GoGeek</string>
+		<key>shortcut</key>
+		<string>gogeek</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Google</string>
+		<key>shortcut</key>
+		<string>google</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>GrowBig</string>
+		<key>shortcut</key>
+		<string>growbig</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Google Workspace</string>
+		<key>shortcut</key>
+		<string>gsuite</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>I hope you are safe and well!</string>
+		<key>shortcut</key>
+		<string>hps</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>information</string>
+		<key>shortcut</key>
+		<string>info</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>IP</string>
+		<key>shortcut</key>
+		<string>ip</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>IPs</string>
+		<key>shortcut</key>
+		<string>ips</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>𓂸</string>
+		<key>shortcut</key>
+		<string>kur</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>𓂺</string>
+		<key>shortcut</key>
+		<string>kurche</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>It seems that there is a temporary issue with the Let's encrypt SSLs thus causing the error. It has just recently appeared and our system administrators are currently working on resolving the issue as soon as possible - fixes are being applied as we speak. In the meantime, we apologise for the inconvenience and appreciate the understanding! </string>
+		<key>shortcut</key>
+		<string>leissue</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Let's</string>
+		<key>shortcut</key>
+		<string>lets</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>I would suggest cleaning/removing the file then you can go to the SiteGround Client Area home page ( my.siteground.com ) ➔ Click the "review" button for the malware notice ➔ Click the "More" button at the bottom ➔ Click "Request scan" to have our system check the site once more, make sure everything looks good and put the site back online if that is the case</string>
+		<key>shortcut</key>
+		<string>malware!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ WordPress ➔ Migrator and generate a new token</string>
+		<key>shortcut</key>
+		<string>migratortoken!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>MySQL</string>
+		<key>shortcut</key>
+		<string>mysql</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ MySQL </string>
+		<key>shortcut</key>
+		<string>mysql!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>nameservers</string>
+		<key>shortcut</key>
+		<string>ns</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>shown in the SiteTools Dashboard - nameservers section on the lower right</string>
+		<key>shortcut</key>
+		<string>nsst</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>On my way!</string>
+		<key>shortcut</key>
+		<string>omw</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Outlook</string>
+		<key>shortcut</key>
+		<string>outlook</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ Parked domains </string>
+		<key>shortcut</key>
+		<string>parked!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>The phone support team can be reached via the same process that you used to open a chat and the process is also described here www.siteground.com/kb/phone_support/ however bear in mind that our system will show the phone and other support options depending on various factors such as type of query, your question, current load, etc.</string>
+		<key>shortcut</key>
+		<string>phone!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>phpMyAdmin</string>
+		<key>shortcut</key>
+		<string>phpmyadmin</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>the SiteGround Client Area ( my.siteground.com ) ➔  Services ➔ Manage button for the hosting plan ➔ 3 dot menu ➔ Renewal settings ➔ Toggle the option off and click Confirm</string>
+		<key>shortcut</key>
+		<string>planrenewal!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>the SiteGround Client Area ( my.siteground.com ) ➔  Services ➔ Manage button for the hosting plan ➔ Statistics tab</string>
+		<key>shortcut</key>
+		<string>planstats!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>(☞ ͡° ͜ʖ ͡°)☞𓂸</string>
+		<key>shortcut</key>
+		<string>pointkurche</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>I will submit a ticket to our senior technical team since they have the necessary advanced server access to check that for you and advise further</string>
+		<key>shortcut</key>
+		<string>postaticket</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>PayPal</string>
+		<key>shortcut</key>
+		<string>pp</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>password</string>
+		<key>shortcut</key>
+		<string>pw</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>questions</string>
+		<key>shortcut</key>
+		<string>qs</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC7JVPUX805HHbnqHrutSCEQRNEbqokGA6pQZ6w6rp21ZS4ldWfViLT5GSGu016iWrabvz+Tf7K9oGPyornzBYb0dVwogy9SuABv9wA1vz+EHlbCbju/aNThz9WdNjTr0AiYRWgNZps7MY5D4FeYMOdg0wwQ0qp2yFaGocuwwvZFbejmqQlq31xz0kvUXcq3DV07ykrWnzNNdt0Sw3eEu+Df0KGotmKSzVxuM9ZBrrgFLzl1aBCFMb0mTwl7MeHsBLVFBi6j/w5wppIZcngRrnCKeLJinRcowC5svyXWIGWdKSfg1oA4+3ZzgLtSe0uGs6MJfGQOVJUAeZ51PmOLSgad74yASqn+vj9QBZkV50E49b+/tUOU8s9Gs1Yv4W4HQFQjIo+5SbP2Yq1D6gkQ8I6xXbgghIWutheIs76OsDJbELenUAMYlSPP1lCIrQ7hmR8DeUkxElt0MC8lf1AlzMvaUNRsGbdEt4AdpJ+L1GIqONHGQRZxlR8+oQr/JcbBFE= sgtest</string>
+		<key>shortcut</key>
+		<string>qw</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ Redirects</string>
+		<key>shortcut</key>
+		<string>redirects!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Search and replace</string>
+		<key>shortcut</key>
+		<string>s&amp;r</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ WordPress ➔ Search and replace ➔ Search for  and replace with</string>
+		<key>shortcut</key>
+		<string>searchandreplace!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteGround</string>
+		<key>shortcut</key>
+		<string>sg</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteGround CDN</string>
+		<key>shortcut</key>
+		<string>sgc</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteGround Client Area ( my.siteground.com ) ➔ </string>
+		<key>shortcut</key>
+		<string>sgcli</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ns1.siteground.net and ns2.siteground.net</string>
+		<key>shortcut</key>
+		<string>sgns</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteGround Optimizer</string>
+		<key>shortcut</key>
+		<string>sgo</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteGround Security</string>
+		<key>shortcut</key>
+		<string>sgs</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteScanner</string>
+		<key>shortcut</key>
+		<string>sitescanner</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SMTP</string>
+		<key>shortcut</key>
+		<string>smtp</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SPF</string>
+		<key>shortcut</key>
+		<string>spf</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>screenshot</string>
+		<key>shortcut</key>
+		<string>ss</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SSH</string>
+		<key>shortcut</key>
+		<string>ssh</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SSL</string>
+		<key>shortcut</key>
+		<string>ssl</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ Security ➔ SSL manager</string>
+		<key>shortcut</key>
+		<string>ssl!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools</string>
+		<key>shortcut</key>
+		<string>st</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ WordPress ➔ Staging </string>
+		<key>shortcut</key>
+		<string>staging!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>StartUp</string>
+		<key>shortcut</key>
+		<string>startup</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Statistics</string>
+		<key>shortcut</key>
+		<string>stats</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools can be accessed via the SiteGround client area ( my.siteground.com ) ➔ Websites section ➔ SiteTools button or via tools.siteground.com and your SiteGround credentials</string>
+		<key>shortcut</key>
+		<string>stt!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ Subdomains</string>
+		<key>shortcut</key>
+		<string>subdomains!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>The pleasure is all mine!</string>
+		<key>shortcut</key>
+		<string>tpm</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>the SiteGround Client Area ( my.siteground.com ) ➔  Websites ➔ All site options button for the site ➔ 3 dot menu ➔ Transfer ownership option. The process is also shown here - https://www.siteground.com/kb/can-transfer-ownership-website/</string>
+		<key>shortcut</key>
+		<string>transferownership!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>the SiteGround Client Area ( my.siteground.com ) ➔  Services ➔ Manage button for the hosting plan ➔ 3 dot menu ➔ Upgrade option</string>
+		<key>shortcut</key>
+		<string>upgrade!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>I’m glad I could help. By the way we have turned 18 on the 22nd of March and to celebrate we are giving away our best selling security feature, SG Site Scanner, free for three months to eligible clients. The offer is limited-time only and I advise you to claim it immediately at this link url:https://my.siteground.com ➔ Click the GET button on the banner and ensure that your website is monitored for a variety of malware and online threats.</string>
+		<key>shortcut</key>
+		<string>upsell</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>URL</string>
+		<key>shortcut</key>
+		<string>url</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>URLs</string>
+		<key>shortcut</key>
+		<string>urls</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>If anything else comes up, please feel free to reach out to us - we are available 24/7</string>
+		<key>shortcut</key>
+		<string>w247</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>WiFi</string>
+		<key>shortcut</key>
+		<string>wifi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>WooCommerce</string>
+		<key>shortcut</key>
+		<string>woo</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>SiteTools ➔ WordPress ➔ Install &amp; manage</string>
+		<key>shortcut</key>
+		<string>wpinstall!</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>WordPress</string>
+		<key>shortcut</key>
+		<string>wps</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Welcome to our SiteGround live chat!</string>
+		<key>shortcut</key>
+		<string>wtsg</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>You are most welcome!</string>
+		<key>shortcut</key>
+		<string>ymw</string>
+	</dict>
+</array>
+</plist>
